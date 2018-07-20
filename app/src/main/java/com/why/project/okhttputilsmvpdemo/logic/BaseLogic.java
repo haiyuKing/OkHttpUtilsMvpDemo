@@ -2,7 +2,6 @@ package com.why.project.okhttputilsmvpdemo.logic;
 
 import android.content.Context;
 
-import com.why.project.okhttputilsmvpdemo.R;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.cookie.CookieJarImpl;
 import com.zhy.http.okhttp.cookie.store.CookieStore;
@@ -23,7 +22,7 @@ public class BaseLogic {
 
 	/**拼接完整的URL地址*/
 	protected String getSpcyUrl(String serverUrl){
-		String url = context.getString(R.string.server_url) + serverUrl;
+		String url = ServerApi.SERVER_URL + serverUrl;
 		return url;
 	}
 

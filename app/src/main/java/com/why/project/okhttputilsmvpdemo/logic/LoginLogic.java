@@ -1,7 +1,6 @@
 package com.why.project.okhttputilsmvpdemo.logic;
 
 import com.why.project.okhttputilsmvpdemo.MyApplication;
-import com.why.project.okhttputilsmvpdemo.R;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
@@ -31,7 +30,7 @@ public class LoginLogic extends BaseLogic {
 		String result = "";
 		OkHttpUtils
 				.get()
-				.url(getSpcyUrl(context.getString(R.string.update_version_url)))
+				.url(getSpcyUrl(ServerApi.UPDATE_VERSION_URL))
 				.id(100)
 				.tag(tag)
 				.build()
